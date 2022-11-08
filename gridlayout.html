@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <style>
+        header{
+            height: 100px;
+            background-color: rgba(146, 255, 204, 0.5);
+            border-radius: 15px;
+            padding: 10px;
+            margin: 0 auto;
+            font-family: 'Nanum Gothic';
+            text-align: center;
+        }
+
+        footer{
+            font-family: 'Nanum Gothic';
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        ul.nav{
+            background-color: rgba(255, 187, 131, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        div{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container"> 
+        <header>
+            <h2>그리드 시스템을 이용한 레이아웃</h2>
+        </header>
+
+
+        <div class="row">
+            <div class="col-md-2 col-md-push-10">  <!-- push/pull : 위치 바꾸는 속성-->
+                <ul class="nav">
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                </ul>
+            </div>
+            <div class="col-md-10 col-md-pull-2">
+                <p>행은 반드시 적절한 정렬과 패딩을 위해서 .container (fixed-width) 나 .container-fluid (full-width) 안에 위치해야 합니다.열들의 수평그룹을 만드는데 행을 이용하세요.</p>
+                <p>콘텐츠는 열안에 위치해야 합니다. 그리고 열들만이 행의 바로 아래에 올 수 있습니다. .row 과 .col-xs-4 같은 사전정의된 그리드 클래스들은 간편하게 그리드 레이아웃 만드는 것을 가능하게 합니다. Less 믹스인은 좀 더 시멘틱한 레이아웃을 위해 사용되어질 수 있습니다.</p>
+            </div>
+        </div>
+
+
+        <footer>
+            여기가 푸터가 들어가는 곳입니다.
+        </footer>
+    </div>
+
+
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
