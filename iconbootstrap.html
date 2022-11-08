@@ -40,7 +40,70 @@
         <!-- 드롭다운 메뉴 -->
         <div class="dropdown">
             <a data-toggle="dropdown" href="a">여기를 클릭</a>
+            <ul class="dropdown-menu" role="menu">  <!-- role : 음성 서비스 제공의 용도 -->
+                <li><a tabindex="-1" href="a">메뉴1</a></li>
+                <li><a tabindex="-1" href="a">메뉴2</a></li>
+                <li><a tabindex="-1" href="a">메뉴3</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="a">분리된 메뉴</a></li>
+            </ul>
         </div>
+
+        <hr>
+
+        <!-- 드롭다운 메뉴 정렬 및 속성 부여 -->
+        <div class="dropdown">
+            <a data-toggle="dropdown" href="a">여기를 클릭</a>
+            <ul class="dropdown-menu pull-right" role="menu">  <!-- role : 음성 서비스 제공의 용도 -->
+                <li><a tabindex="-1" href="a">메뉴1</a></li>
+                <li class="disabled"><a tabindex="-1" href="a">메뉴2</a></li>
+                <li><a tabindex="-1" href="a">메뉴3</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="a">분리된 메뉴</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="dropdown">
+            <a data-toggle="dropdown"  class="btn btn-default btn-primary">여기를 클릭</a>
+            <ul class="dropdown-menu" role="menu">  <!-- role : 음성 서비스 제공의 용도 -->
+                <li><a tabindex="-1" href="a">메뉴1</a></li>
+                <li class="disabled"><a tabindex="-1" href="a">메뉴2</a></li>
+                <li><a tabindex="-1" href="a">메뉴3</a></li>
+                <li class="divider"></li>
+                <li><a tabindex="-1" href="a">분리된 메뉴</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>버튼태그를 사용한 일반적인 버튼</h2>
+        <button type="button" class="btn btn-default">버튼1</button>
+        <button type="button" class="btn btn-default">버튼2</button>
+        <button type="button" class="btn btn-default">버튼3</button>
+        <button type="button" class="btn btn-default">버튼4</button>
+
+        <hr>
+
+        <h2>버튼 그룹</h2>  <!--여백없이 버튼이 묶임 -> 속성이 일괄 적용된다.-->
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-default">버튼1</button>
+            <button type="button" class="btn btn-default">버튼2</button>
+            <button type="button" class="btn btn-default">버튼3</button>
+            <button type="button" class="btn btn-default">버튼4</button>
+        </div>
+
+        <hr>
+
+        <h2>버튼 그룹2</h2>  <!---->
+        <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-default">버튼1</button>
+            <button type="button" class="btn btn-default">버튼2</button>
+            <button type="button" class="btn btn-default">버튼3</button>
+            <button type="button" class="btn btn-default">버튼4</button>
+        </div>
+
 
 
     </div>
