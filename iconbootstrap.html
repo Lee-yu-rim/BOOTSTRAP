@@ -96,13 +96,81 @@
 
         <hr>
 
-        <h2>버튼 그룹2</h2>  <!---->
+        <h2>버튼 그룹2</h2>
         <div class="btn-group btn-group-sm">
             <button type="button" class="btn btn-default">버튼1</button>
             <button type="button" class="btn btn-default">버튼2</button>
             <button type="button" class="btn btn-default">버튼3</button>
             <button type="button" class="btn btn-default">버튼4</button>
         </div>
+
+        <hr>
+
+        <h2>버튼의 중첩</h2>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default">버튼1</button>
+            <button type="button" class="btn btn-default">버튼2</button>
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">클릭<span class="caret"></span></button>  
+                <!-- span class="caret" : 버튼에 삼각형 넣어주기 / dropdown-toggle : 버튼 둥글게 만들기 -->
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="a">메뉴1</a></li>
+                    <li><a tabindex="-1" href="a">메뉴2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>버튼의 수직 정렬</h2>
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-default">버튼1</button>
+            <button type="button" class="btn btn-default">버튼2</button>
+            <div class="btn-group">
+                <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">클릭<span class="caret"></span></button>  
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="a">메뉴1</a></li>
+                    <li><a tabindex="-1" href="a">메뉴2</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        
+        <h2>드롭업과 드롭다운 비교</h2>
+        <div class="btn-group dropup">
+            <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">클릭<span class="caret"></span></button>  
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="a">메뉴1</a></li>
+                <li><a tabindex="-1" href="a">메뉴2</a></li>
+            </ul>
+        </div>
+
+        <div class="btn-group">
+            <button type="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle">클릭<span class="caret"></span></button>  
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1" href="a">메뉴1</a></li>
+                <li><a tabindex="-1" href="a">메뉴2</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>입력그룹</h2>
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+            <input type="text" class="form-control" placeholder="아이디">
+        </div>
+
+        <br>
+
+        <div class="input-group">
+            <span class="input-group-addon">금액</span>
+            <input type="text" class="form-control" placeholder="금액">
+            <span class="input-group-addon">원</span>
+        </div>
+
+
 
 
 
